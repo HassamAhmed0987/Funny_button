@@ -1,0 +1,51 @@
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-8px);
+  }
+  40% {
+    transform: translateX(8px);
+  }
+  60% {
+    transform: translateX(-8px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: shake 0.3s infinite;
+}
+
+
+
+@keyframes blast {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+
+  30% {
+    transform: scale(1.4) rotate(15deg);
+  }
+
+  60% {
+    transform: scale(2.5) rotate(-15deg);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(10) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.blast {
+  animation: blast .6s ease-out forwards;
+}
